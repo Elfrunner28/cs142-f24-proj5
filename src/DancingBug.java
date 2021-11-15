@@ -86,6 +86,10 @@ public abstract class DancingBug {
     public String getColor() {
         return color;
     }
+    
+    public void setColor(String newColor) {
+        color = newColor;
+    }
 
     public String getImageFilename() {
         return "bug-" + getColor() + "-" + directionFacing.getAbbreviation() + ".png";
