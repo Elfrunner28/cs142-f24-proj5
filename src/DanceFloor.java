@@ -54,10 +54,10 @@ public class DanceFloor {
             canvas.drawLine(col * SQUARESIZE, 0, col * SQUARESIZE, rows * SQUARESIZE);
         }
 
-        for (DancingBug lynx : bugs) {
-            int row = lynx.getLocationRow();
-            int col = lynx.getLocationCol();
-            canvas.drawImage(col * SQUARESIZE, row * SQUARESIZE, lynx.getImageFilename(), SQUARESIZE, SQUARESIZE);
+        for (DancingBug bug : bugs) {
+            int row = bug.getLocationRow();
+            int col = bug.getLocationCol();
+            canvas.drawImage(col * SQUARESIZE, row * SQUARESIZE, bug.getImageFilename(), SQUARESIZE, SQUARESIZE);
         }
 
         if (isWindowShowing) {
